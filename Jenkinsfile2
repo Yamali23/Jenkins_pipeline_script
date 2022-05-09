@@ -18,7 +18,7 @@ pipeline {
             steps {
                echo "Building project:"
                sh   "mvn package"
-               echo "Build success"
+               echo "Build #$BUILD_NUMBER success"
             }
         }    
         stage('Deploying') {
