@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters{
         booleanParam description: 'Do you want Jenkins to deploy war on TomCat after building?', name: 'Deploy'
-        string defaultValue: 'Project23', description: 'The exact value of "Context path" to deploy', name: 'Name',trim: true
+        string defaultValue: 'pipelineProject_23', description: 'The exact value of "Context path" to deploy', name: 'Name',trim: true
     }
     stages {
         stage('Preparing') {
